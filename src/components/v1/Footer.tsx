@@ -28,7 +28,7 @@ export function Footer() {
                 naminsoo@aixlife.co.kr
               </span>
               <p className="text-gray-400 text-lg font-bold">010-3709-0516</p>
-              <a href="https://open.kakao.com/me/naminsoo_ai" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-primary transition-colors text-lg font-bold">
+              <a href="https://open.kakao.com/o/gT0uVxJh" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-primary transition-colors text-lg font-bold">
                 카카오 오픈채팅
               </a>
             </div>

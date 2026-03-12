@@ -49,7 +49,7 @@ const socialLinks = [
   },
   {
     platform: "KakaoTalk",
-    url: "https://open.kakao.com/o/gT0uVxJh",
+    url: "https://open.kakao.com/me/naminsoo_ai",
     logo: (
       <svg viewBox="0 0 24 24" className="w-10 h-10">
         <path fill="#FFE812" d="M12 3c-5.08 0-9.2 3.34-9.2 7.47 0 2.67 1.73 5.02 4.35 6.38l-1.1 4.07c-.1.36.31.65.62.44l4.84-3.2c.16.01.32.02.49.02 5.08 0 9.2-3.34 9.2-7.47S17.08 3 12 3Z"/>
@@ -85,7 +85,8 @@ export function AixlifeAbout() {
             </p>
             <p className="break-keep text-balance">
               저는 AI가 단순한 도구가 아닌, 업무의 본질을 바꾸는 파트너가 될 수 있다고 믿습니다.<br className="hidden lg:block"/>
-              600시간 이상의 강의 경험과 1,500명 이상의 교육 실적을 통해 각 조직의 상황에 맞는 실질적인 AI 활용 방안을 제시합니다.
+              600시간 이상의 강의 경험과 1,500명 이상의 교육 실적을 통해<br />
+              각 조직의 상황에 맞는 실질적인 AI 활용 방안을 제시합니다.
             </p>
           </div>
         </FadeIn>
