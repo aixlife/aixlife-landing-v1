@@ -1,0 +1,32 @@
+# AIXLIFE - AI Education & Consulting
+# https://aixlife.co.kr
+
+User-agent: *
+Allow: /
+
+# AI Crawlers — Allowed for GEO (Generative Engine Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://aixlife.co.kr/sitemap.xml

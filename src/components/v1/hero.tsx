@@ -58,6 +58,11 @@ export function Hero() {
             <span className="block text-white mt-2">성장시킵니다</span>
           </h1>
 
+          {/* Definition Line */}
+          <p className="text-base md:text-lg text-[#FFE87A]/80 font-medium mb-6 tracking-wide">
+            사람이 방향을 잡고, AI가 실행합니다 — 비즈니스 AI 교육 & 컨설팅 전문 기업
+          </p>
+
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-[#a3a3a3] max-w-2xl leading-relaxed mb-12 break-keep text-balance">
             600시간+ 강의 경험, 1,500명+ 교육 실적.
