@@ -24,10 +24,10 @@ export function Footer() {
           <div>
             <h4 className="text-white font-bold uppercase tracking-widest text-sm mb-6">Contact</h4>
             <div className="space-y-4">
-              <span className="block text-gray-400 text-lg font-bold">
+              <a href="mailto:naminsoo@aixlife.co.kr" className="block text-gray-400 hover:text-primary transition-colors text-lg font-bold">
                 naminsoo@aixlife.co.kr
-              </span>
-              <p className="text-gray-400 text-lg font-bold">010-3709-0516</p>
+              </a>
+              <a href="tel:+82-10-3709-0516" className="block text-gray-400 hover:text-primary transition-colors text-lg font-bold">010-3709-0516</a>
               <a href="https://open.kakao.com/o/gT0uVxJh" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-primary transition-colors text-lg font-bold">
                 카카오 오픈채팅
               </a>
@@ -48,10 +48,7 @@ export function Footer() {
           <p className="text-gray-500 font-bold text-sm">
             © {new Date().getFullYear()} AIXLIFE. All rights reserved.
           </p>
-          <div className="flex gap-6">
-            <a href="#" className="text-gray-500 hover:text-white transition-colors font-bold text-sm uppercase tracking-widest">Terms</a>
-            <a href="#" className="text-gray-500 hover:text-white transition-colors font-bold text-sm uppercase tracking-widest">Privacy</a>
-          </div>
+          {/* Terms/Privacy 페이지 준비 전까지 제거 — 데드링크는 SEO 패널티 */}
         </div>
 
       </div>

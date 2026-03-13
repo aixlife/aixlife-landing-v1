@@ -70,24 +70,28 @@ export function Hero() {
             실무 중심 AI 교육으로 조직의 생산성을 혁신합니다.
           </p>
 
-          {/* CTA Buttons */}
+          {/* CTA Buttons — semantic <a> for crawlers, JS scroll for UX */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button 
-              size="lg"
-              onClick={() => scrollTo("#contact")}
-              className="h-14 px-10 text-base font-bold tracking-wide flex items-center gap-2"
-            >
-              교육 상담 받기
-              <ArrowRight className="w-5 h-5" />
-            </Button>
-            <Button 
-              size="lg"
-              variant="outline"
-              onClick={() => scrollTo("#portfolio")}
-              className="h-14 px-10 text-base font-bold tracking-wide text-white border-white/20 hover:bg-white/10 hover:text-white"
-            >
-              교육 실적 보기
-            </Button>
+            <a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("#contact"); }}>
+              <Button
+                size="lg"
+                className="h-14 px-10 text-base font-bold tracking-wide flex items-center gap-2"
+                asChild={false}
+              >
+                교육 상담 받기
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+            </a>
+            <a href="#portfolio" onClick={(e) => { e.preventDefault(); scrollTo("#portfolio"); }}>
+              <Button
+                size="lg"
+                variant="outline"
+                className="h-14 px-10 text-base font-bold tracking-wide text-white border-white/20 hover:bg-white/10 hover:text-white"
+                asChild={false}
+              >
+                교육 실적 보기
+              </Button>
+            </a>
           </div>
         </div>
       </div>

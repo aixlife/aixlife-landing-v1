@@ -21,14 +21,14 @@ export function Contact() {
             <div className="space-y-12">
               <div>
                 <p className="text-sm text-gray-500 font-bold uppercase mb-3 tracking-widest">Email</p>
-                <span className="text-4xl sm:text-5xl font-black text-white tracking-tight break-all">
+                <a href="mailto:naminsoo@aixlife.co.kr" className="text-4xl sm:text-5xl font-black text-white tracking-tight break-all hover:text-[#FFE87A] transition-colors">
                   naminsoo@<br className="sm:hidden"/>aixlife.co.kr
-                </span>
+                </a>
               </div>
 
               <div>
                 <p className="text-sm text-gray-500 font-bold uppercase mb-3 tracking-widest">Phone</p>
-                <p className="text-4xl sm:text-5xl font-black text-white tracking-tight">010-3709-0516</p>
+                <a href="tel:+82-10-3709-0516" className="text-4xl sm:text-5xl font-black text-white tracking-tight hover:text-[#FFE87A] transition-colors block">010-3709-0516</a>
               </div>
             </div>
           </FadeIn>
