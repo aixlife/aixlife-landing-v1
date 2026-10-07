@@ -4,6 +4,7 @@ import { ArrowRight, X } from "lucide-react";
 
 const NAV_LINKS = [
   { name: "제품", href: "#products" },
+  { name: "개발", href: "#dev" },
   { name: "강사 소개", href: "#about" },
   { name: "강의 주제", href: "#topics" },
   { name: "교육 실적", href: "#portfolio" },

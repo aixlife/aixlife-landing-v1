@@ -35,12 +35,21 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-bold uppercase tracking-widest text-sm mb-6">Info</h4>
-            <div className="space-y-2 text-gray-400 text-lg font-medium">
-              <p>대표: 나민수</p>
-              <p>사업자등록번호: 789-71-00438</p>
+            <h4 className="text-white font-bold uppercase tracking-widest text-sm mb-6">Links</h4>
+            <div className="space-y-4">
+              <a href="https://github.com/aixlife" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-primary transition-colors text-lg font-bold">GitHub</a>
+              <a href="https://aimax.ai.kr" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-primary transition-colors text-lg font-bold">AIMAX</a>
+              <a href="https://aixschool.kr" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-primary transition-colors text-lg font-bold">AIxSCHOOL</a>
+              <a href="/about/" className="block text-gray-400 hover:text-primary transition-colors text-lg font-bold">About (English)</a>
             </div>
           </div>
+        </div>
+
+        {/* Business info */}
+        <div className="text-gray-500 text-sm font-medium leading-relaxed space-y-1 mb-10 break-keep">
+          <p>상호 에익스라이프(AIXLIFE) · 대표 나민수 · 사업자등록번호 789-71-00438</p>
+          <p>주소 서울특별시 강북구 도봉로65길 39-4(미아동) · 개업 2023년 1월 26일 · 업종 정보통신업(컴퓨터 프로그래밍 서비스업), 시각 디자인업</p>
+          <p>이메일 naminsoo@aixlife.co.kr · 전화 010-3709-0516 · 호스팅 Vercel Inc.</p>
         </div>
 
         {/* Bottom Bar */}
@@ -48,7 +57,10 @@ export function Footer() {
           <p className="text-gray-500 font-bold text-sm">
             © 2023–{new Date().getFullYear()} AIXLIFE. All rights reserved.
           </p>
-          {/* Terms/Privacy 페이지 준비 전까지 제거 — 데드링크는 SEO 패널티 */}
+          <div className="flex gap-6 text-sm font-bold">
+            <a href="/privacy/" className="text-gray-300 hover:text-primary transition-colors">개인정보처리방침</a>
+            <a href="/terms/" className="text-gray-500 hover:text-primary transition-colors">이용약관</a>
+          </div>
         </div>
 
       </div>
