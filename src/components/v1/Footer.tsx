@@ -17,7 +17,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-24">
           <div>
             <p className="text-gray-400 text-lg font-medium leading-relaxed max-w-sm">
-              사람이 방향을 잡고, AI가 실행한다.<br/>비즈니스 문제 해결을 위한 실전 AI 교육 & 컨설팅.
+              사람이 방향을 잡고, AI가 실행한다.<br/>AI 직원(에이전트) 제품 개발과 실전 AI 교육. Since 2023.
             </p>
           </div>
 
@@ -46,7 +46,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 pt-8 border-t border-white/10">
           <p className="text-gray-500 font-bold text-sm">
-            © {new Date().getFullYear()} AIXLIFE. All rights reserved.
+            © 2023–{new Date().getFullYear()} AIXLIFE. All rights reserved.
           </p>
           {/* Terms/Privacy 페이지 준비 전까지 제거 — 데드링크는 SEO 패널티 */}
         </div>

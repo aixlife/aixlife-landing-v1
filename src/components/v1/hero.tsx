@@ -40,7 +40,7 @@ export function Hero() {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#FFE87A]" />
             </span>
             <span className="text-sm font-medium text-[#FFE87A] uppercase tracking-widest">
-              AI 교육 & 컨설팅
+              AI 에이전트 제품 · AI 교육
             </span>
           </div>
 
@@ -60,7 +60,7 @@ export function Hero() {
 
           {/* Definition Line */}
           <p className="text-base md:text-lg text-[#FFE87A]/80 font-medium mb-6 tracking-wide">
-            사람이 방향을 잡고, AI가 실행합니다 — 비즈니스 AI 교육 & 컨설팅 전문 기업
+            사람이 방향을 잡고, AI가 실행합니다 — AI 직원(에이전트) 제품을 만들고 가르치는 기업
           </p>
 
           {/* Subheadline */}

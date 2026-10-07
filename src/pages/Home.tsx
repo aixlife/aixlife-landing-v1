@@ -7,6 +7,7 @@ import { Topics } from "@/components/v1/Topics";
 import { Portfolio } from "@/components/v1/Portfolio";
 import { Features } from "@/components/v1/Features";
 import { Contact } from "@/components/v1/Contact";
+import { Products } from "@/components/v1/Products";
 import { CustomCursor } from "@/components/ui/CustomCursor";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       
       <main>
         <AixlifeHero />
+        <Products />
         <Clients />
         <AixlifeAbout />
         <Topics />
