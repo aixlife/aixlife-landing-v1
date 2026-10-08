@@ -12,7 +12,7 @@ type Product = {
 const PRODUCTS: Product[] = [
   {
     name: "AIMAX AI 직원",
-    tag: "AIXLIFE 개발 · 서비스 운영 메이크패밀리",
+    tag: "AIXLIFE 개발 · 사용자 3,000명",
     desc: "사장님 대신 블로그 글쓰기, 견적서, 고객 찾기, 사무 정리를 맡는 AI 직원 서비스. 운영 웹앱과 Mac/Windows 로컬 에이전트로 구성되며, 사용자 3,000명이 쓰고 있습니다.",
     stack: "Claude API (Claude Sonnet) 글쓰기·판단 엔진",
     url: "https://aimax.ai.kr",
