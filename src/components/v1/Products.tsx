@@ -13,13 +13,13 @@ const PRODUCTS: Product[] = [
   {
     name: "AIMAX AI 직원",
     tag: "AIXLIFE 개발 · 서비스 운영 메이크패밀리",
-    desc: "사장님 대신 블로그 글쓰기, 견적서, 고객 찾기, 사무 정리를 맡는 AI 직원 서비스. 운영 웹앱과 Mac/Windows 로컬 에이전트로 구성됩니다.",
+    desc: "사장님 대신 블로그 글쓰기, 견적서, 고객 찾기, 사무 정리를 맡는 AI 직원 서비스. 운영 웹앱과 Mac/Windows 로컬 에이전트로 구성되며, 사용자 3,000명이 쓰고 있습니다.",
     stack: "Claude API (Claude Sonnet) 글쓰기·판단 엔진",
     url: "https://aimax.ai.kr",
   },
   {
     name: "AIxSCHOOL",
-    tag: "AI 직원 양성학교",
+    tag: "AI 직원 양성학교 · 2026년 10월 개강",
     desc: "비개발자가 AI 직원(에이전트)을 직접 만들고 자동화팀으로 연결하는 12개월 과정과 실습 플랫폼. 글감 하나로 스레드 글·카드뉴스·숏폼 대본을 만드는 콘텐츠 자동화팀 등을 제공합니다.",
     stack: "AI 에이전트 템플릿 · 멀티 에이전트 워크플로우",
     url: "https://aixschool.kr",

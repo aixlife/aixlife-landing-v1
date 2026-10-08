@@ -85,7 +85,7 @@ export function AixlifeAbout() {
             </p>
             <p className="break-keep text-balance">
               저는 AI가 단순한 도구가 아닌, 업무의 본질을 바꾸는 파트너가 될 수 있다고 믿습니다.<br className="hidden lg:block"/>
-              600시간 이상의 강의 경험과 1,500명 이상의 교육 실적을 통해<br />
+              600시간 이상의 강의 경험과 누적 수강생 5,000명 이상의 실적을 통해<br />
               각 조직의 상황에 맞는 실질적인 AI 활용 방안을 제시합니다.
             </p>
           </div>

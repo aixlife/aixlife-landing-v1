@@ -65,7 +65,7 @@ export function Hero() {
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-[#a3a3a3] max-w-2xl leading-relaxed mb-12 break-keep text-balance">
-            600시간+ 강의 경험, 1,500명+ 교육 실적.
+            600시간+ 강의 경험, 누적 수강생 5,000명+.
             <br className="hidden sm:block" />
             실무 중심 AI 교육으로 조직의 생산성을 혁신합니다.
           </p>
