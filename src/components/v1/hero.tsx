@@ -31,7 +31,7 @@ export function Hero() {
       <NeuralNetworkBackground />
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-transparent via-transparent via-50% to-page/70 pointer-events-none"></div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-20 w-full grid lg:grid-cols-[1.15fr_0.85fr] gap-12 lg:gap-16 items-center">
         <div className="max-w-5xl">
           {/* Badge */}
           <div className="inline-flex items-center gap-3 mb-8">
@@ -45,7 +45,7 @@ export function Hero() {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-heading font-black tracking-tighter uppercase leading-[0.85] mb-8">
+          <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl font-heading font-black tracking-tighter uppercase leading-[0.85] mb-8">
             <span className="block text-ink">당신의 조직을</span>
             <span className="block text-ink mt-2">AI</span>
             <span className="block mt-2">
@@ -94,6 +94,19 @@ export function Hero() {
             </a>
           </div>
         </div>
+
+        {/* Lecture photo */}
+        <figure className="relative">
+          <img
+            src="/images/lecture/hero-dual-brain.webp"
+            alt="나민수 강사가 연단에서 AI 강연을 하는 모습"
+            className="w-full aspect-[4/3] lg:aspect-[4/5] object-cover rounded-3xl shadow-2xl border border-line"
+            fetchPriority="high"
+          />
+          <figcaption className="absolute left-4 bottom-4 px-3 py-1.5 rounded-full bg-page/85 backdrop-blur text-xs md:text-sm font-bold text-ink">
+            현장 강연 · DUAL BRAIN
+          </figcaption>
+        </figure>
       </div>
 
       {/* Scroll Indicator */}

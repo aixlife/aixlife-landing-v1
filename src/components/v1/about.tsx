@@ -91,6 +91,22 @@ export function AixlifeAbout() {
           </div>
         </FadeIn>
 
+        {/* Lecture photos */}
+        <FadeIn className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 md:h-[620px] gap-4 md:gap-6 mb-16">
+          <figure className="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-[1.5rem] md:rounded-[2rem] border border-line">
+            <img src="/images/lecture/about-midjourney.webp" alt="나민수 강사가 미드저니 활용 실습을 강의하는 모습" loading="lazy" className="w-full h-full aspect-[4/3] md:aspect-auto object-cover" />
+            <figcaption className="absolute left-4 bottom-4 px-3 py-1.5 rounded-full bg-page/85 backdrop-blur text-xs md:text-sm font-bold text-ink">인공지능과 디자이너 · 미드저니 활용 실습</figcaption>
+          </figure>
+          <figure className="relative overflow-hidden rounded-[1.5rem] md:rounded-[2rem] border border-line">
+            <img src="/images/lecture/about-small-group.webp" alt="소그룹 실습 강의에서 화면을 가리키며 설명하는 모습" loading="lazy" className="w-full h-full aspect-[4/3] md:aspect-auto object-cover" />
+            <figcaption className="absolute left-4 bottom-4 px-3 py-1.5 rounded-full bg-page/85 backdrop-blur text-xs font-bold text-ink">소그룹 실습 강의</figcaption>
+          </figure>
+          <figure className="relative overflow-hidden rounded-[1.5rem] md:rounded-[2rem] border border-line">
+            <img src="/images/lecture/about-practice-guide.webp" alt="실습 화면을 띄워 놓고 수강생에게 안내하는 모습" loading="lazy" className="w-full h-full aspect-[4/3] md:aspect-auto object-cover" />
+            <figcaption className="absolute left-4 bottom-4 px-3 py-1.5 rounded-full bg-page/85 backdrop-blur text-xs font-bold text-ink">실습 안내</figcaption>
+          </figure>
+        </FadeIn>
+
         {/* Highlights — single horizontal row */}
         <StaggerContainer className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-16">
           {highlights.map((item, index) => (

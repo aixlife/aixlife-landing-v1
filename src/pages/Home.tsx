@@ -9,6 +9,7 @@ import { Features } from "@/components/v1/Features";
 import { Contact } from "@/components/v1/Contact";
 import { Products } from "@/components/v1/Products";
 import { Dev } from "@/components/v1/Dev";
+import { Field } from "@/components/v1/Field";
 import { CustomCursor } from "@/components/ui/CustomCursor";
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
         <Products />
         <Dev />
         <Clients />
+        <Field />
         <AixlifeAbout />
         <Topics />
         <Portfolio />
