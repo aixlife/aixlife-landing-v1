@@ -42,13 +42,13 @@ const REPOS = [
 
 export function Dev() {
   return (
-    <section id="dev" className="py-32 bg-black border-t border-white/10">
+    <section id="dev" className="py-32 bg-page border-t border-ink/10">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn className="mb-16">
           <h2 className="text-sm font-black tracking-widest text-white uppercase mb-6 inline-block bg-primary px-4 py-1 rounded-full">
             Development
           </h2>
-          <h3 className="text-6xl md:text-8xl font-black text-white tracking-tighter uppercase mb-8">
+          <h3 className="text-6xl md:text-8xl font-black text-ink tracking-tighter uppercase mb-8">
             개발 &amp; 오픈소스
           </h3>
           <p className="text-xl md:text-2xl text-gray-400 max-w-3xl leading-relaxed break-keep text-balance">
@@ -60,8 +60,8 @@ export function Dev() {
         <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {BUILD_TYPES.map((b) => (
             <StaggerItem key={b.title}>
-              <div className="h-full border border-white/15 rounded-3xl p-8">
-                <h4 className="text-2xl font-black text-white tracking-tight mb-3 break-keep">{b.title}</h4>
+              <div className="h-full border border-ink/15 rounded-3xl p-8">
+                <h4 className="text-2xl font-black text-ink tracking-tight mb-3 break-keep">{b.title}</h4>
                 <p className="text-base text-gray-400 leading-relaxed break-keep">{b.desc}</p>
               </div>
             </StaggerItem>
@@ -82,12 +82,12 @@ export function Dev() {
 
         {/* Open source */}
         <FadeIn className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-8">
-          <h4 className="text-4xl md:text-5xl font-black text-white tracking-tighter">공개 저장소</h4>
+          <h4 className="text-4xl md:text-5xl font-black text-ink tracking-tighter">공개 저장소</h4>
           <a
             href="https://github.com/aixlife"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-primary text-white font-black text-lg hover:bg-white hover:text-black transition-colors"
+            className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-primary text-white font-black text-lg hover:bg-ink hover:text-page transition-colors"
           >
             <Github className="w-5 h-5" />
             github.com/aixlife
@@ -105,7 +105,7 @@ export function Dev() {
                 className="block h-full border-2 border-primary rounded-3xl p-8 group hover:bg-primary transition-colors"
               >
                 <div className="flex items-start justify-between gap-4 mb-4">
-                  <h5 className="text-2xl md:text-3xl font-black text-white group-hover:text-white tracking-tight break-all transition-colors">
+                  <h5 className="text-2xl md:text-3xl font-black text-ink group-hover:text-white tracking-tight break-all transition-colors">
                     aixlife/{r.name}
                   </h5>
                   <ArrowUpRight className="shrink-0 w-7 h-7 text-brand-light group-hover:text-white transition-colors" />

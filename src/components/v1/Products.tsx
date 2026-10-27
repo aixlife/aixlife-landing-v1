@@ -40,13 +40,13 @@ const PRODUCTS: Product[] = [
 
 export function Products() {
   return (
-    <section id="products" className="py-32 bg-black border-t border-white/10">
+    <section id="products" className="py-32 bg-page border-t border-ink/10">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn className="mb-16">
           <h2 className="text-sm font-black tracking-widest text-white uppercase mb-6 inline-block bg-primary px-4 py-1 rounded-full">
             Products
           </h2>
-          <h3 className="text-6xl md:text-8xl font-black text-white tracking-tighter uppercase mb-8">
+          <h3 className="text-6xl md:text-8xl font-black text-ink tracking-tighter uppercase mb-8">
             만드는 제품
           </h3>
           <p className="text-xl md:text-2xl text-gray-400 max-w-3xl leading-relaxed break-keep text-balance">
@@ -62,7 +62,7 @@ export function Products() {
             const Inner = (
               <div className="h-full border-2 border-primary rounded-3xl p-8 md:p-10 group hover:bg-primary transition-colors">
                 <div className="flex items-start justify-between gap-4 mb-4">
-                  <h4 className="text-3xl md:text-4xl font-black text-white group-hover:text-white tracking-tighter transition-colors break-keep">
+                  <h4 className="text-3xl md:text-4xl font-black text-ink group-hover:text-white tracking-tighter transition-colors break-keep">
                     {p.name}
                   </h4>
                   {p.url && (

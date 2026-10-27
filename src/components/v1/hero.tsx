@@ -26,10 +26,10 @@ export function Hero() {
   }
 
   return (
-    <section className="relative min-h-screen flex items-center pt-20 bg-black text-white overflow-hidden">
+    <section className="relative min-h-screen flex items-center pt-20 bg-page text-ink overflow-hidden">
       {/* Neural Network Background */}
       <NeuralNetworkBackground />
-      <div className="absolute inset-0 z-0 bg-gradient-to-b from-transparent via-transparent via-50% to-black/70 pointer-events-none"></div>
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-transparent via-transparent via-50% to-page/70 pointer-events-none"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-20">
         <div className="max-w-5xl">
@@ -46,8 +46,8 @@ export function Hero() {
 
           {/* Main Headline */}
           <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-heading font-black tracking-tighter uppercase leading-[0.85] mb-8">
-            <span className="block text-white">당신의 조직을</span>
-            <span className="block text-white mt-2">AI</span>
+            <span className="block text-ink">당신의 조직을</span>
+            <span className="block text-ink mt-2">AI</span>
             <span className="block mt-2">
               <span 
                 className={`inline-block text-brand-light transition-all duration-400 ${isAnimating ? "opacity-0 -translate-y-4" : "opacity-100 translate-y-0"}`}
@@ -55,7 +55,7 @@ export function Hero() {
                 {words[currentWord]}
               </span>
             </span>
-            <span className="block text-white mt-2">성장시킵니다</span>
+            <span className="block text-ink mt-2">성장시킵니다</span>
           </h1>
 
           {/* Definition Line */}
@@ -64,7 +64,7 @@ export function Hero() {
           </p>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-[#a3a3a3] max-w-2xl leading-relaxed mb-12 break-keep text-balance">
+          <p className="text-xl md:text-2xl text-sub max-w-2xl leading-relaxed mb-12 break-keep text-balance">
             600시간+ 강의, 기업·공공기관 교육 1,500명+, 누적 수강생 5,000명+.
             <br className="hidden sm:block" />
             실무 중심 AI 교육으로 조직의 생산성을 혁신합니다.
@@ -86,7 +86,7 @@ export function Hero() {
               <Button
                 size="lg"
                 variant="outline"
-                className="h-14 px-10 text-base font-bold tracking-wide text-white border-white/20 hover:bg-white/10 hover:text-white"
+                className="h-14 px-10 text-base font-bold tracking-wide text-ink border-ink/20 hover:bg-ink/10 hover:text-ink"
                 asChild={false}
               >
                 교육 실적 보기

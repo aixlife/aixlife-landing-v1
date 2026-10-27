@@ -18,8 +18,15 @@
 
   --color-primary: hsl(var(--primary));
   --color-primary-foreground: hsl(var(--primary-foreground));
-  /* 코발트 #0047AB는 검정 배경 글자로 대비가 낮아(2.5:1) 글자·선 강조는 밝은 코발트를 쓴다 */
-  --color-brand-light: #6B9BFF;
+  /* 코발트 #0047AB는 검정 배경 글자로 대비가 낮아(2.5:1) 다크에서는 글자·선 강조에 밝은 코발트를 쓴다 */
+  --color-brand-light: var(--brand-text);
+  /* 페이지 테마 토큰 — html[data-theme] 로 다크/라이트 전환 */
+  --color-page: var(--page);
+  --color-ink: var(--ink);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-line: var(--line);
+  --color-sub: var(--sub);
 
   --color-secondary: hsl(var(--secondary));
   --color-secondary-foreground: hsl(var(--secondary-foreground));
@@ -97,6 +104,34 @@
   --accent-foreground: 0 0% 100%;
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
+}
+
+html {
+  --page: #000000;
+  --ink: #ffffff;
+  --surface: #171717;
+  --surface-2: #262626;
+  --line: #303030;
+  --sub: #a3a3a3;
+  --brand-text: #6B9BFF;
+}
+
+html[data-theme="light"] {
+  --page: #ffffff;
+  --ink: #0a0a0a;
+  --surface: #f4f6fb;
+  --surface-2: #e8eefa;
+  --line: #dde3ee;
+  --sub: #525252;
+  --brand-text: #0047AB;
+  --color-gray-300: #404040;
+  --color-gray-400: #525252;
+  --color-gray-500: #6b7280;
+}
+
+html[data-theme="light"] .logo-on-dark,
+html:not([data-theme="light"]) .logo-on-light {
+  display: none;
 }
 
 @layer base {

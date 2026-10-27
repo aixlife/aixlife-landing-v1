@@ -25,12 +25,12 @@ const FEATURES = [
 
 export function Features() {
   return (
-    <section id="features" className="py-32 bg-black border-t border-white/10">
+    <section id="features" className="py-32 bg-page border-t border-ink/10">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         
         <FadeIn className="text-center mb-20">
-          <h2 className="text-sm font-black tracking-widest text-brand-light uppercase mb-6 inline-block bg-[#262626] px-4 py-1 rounded-full">Why AIMAX</h2>
-          <h3 className="text-6xl md:text-8xl font-black text-white tracking-tighter uppercase break-keep text-balance">
+          <h2 className="text-sm font-black tracking-widest text-brand-light uppercase mb-6 inline-block bg-surface-2 px-4 py-1 rounded-full">Why AIMAX</h2>
+          <h3 className="text-6xl md:text-8xl font-black text-ink tracking-tighter uppercase break-keep text-balance">
             교육 특징
           </h3>
         </FadeIn>
@@ -38,17 +38,17 @@ export function Features() {
         <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
           {FEATURES.map((feature, idx) => (
             <StaggerItem key={idx} className={idx < 3 ? "lg:col-span-2" : "lg:col-span-3"}>
-              <div className="bg-[#171717] p-12 rounded-[2rem] h-full flex flex-col items-center text-center group hover:-translate-y-2 transition-transform duration-300 border border-white/5">
+              <div className="bg-surface p-12 rounded-[2rem] h-full flex flex-col items-center text-center group hover:-translate-y-2 transition-transform duration-300 border border-ink/5">
                 {/* Yellow Circle Metric */}
                 <div className="w-24 h-24 rounded-full border-[3px] border-brand-light flex items-center justify-center mb-10 shadow-[0_0_30px_rgba(107,155,255,0.15)] group-hover:shadow-[0_0_40px_rgba(107,155,255,0.3)] transition-shadow">
                   <span className="text-4xl font-black text-brand-light">{idx + 1}</span>
                 </div>
                 
-                <h4 className="text-3xl font-black text-white mb-6 tracking-tight leading-tight break-keep text-balance">
+                <h4 className="text-3xl font-black text-ink mb-6 tracking-tight leading-tight break-keep text-balance">
                   {feature.title}
                 </h4>
                 
-                <p className="text-lg text-[#a3a3a3] font-medium leading-relaxed break-keep text-balance whitespace-pre-line">
+                <p className="text-lg text-sub font-medium leading-relaxed break-keep text-balance whitespace-pre-line">
                   {feature.desc}
                 </p>
               </div>

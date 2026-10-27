@@ -24,8 +24,8 @@ const socialLinks = [
     platform: "Threads",
     url: "https://www.threads.com/@naminsoo_ai",
     logo: (
-      <svg viewBox="-5 -15 202 222" className="w-10 h-10">
-        <path fill="#ffffff" d="M141.537 88.988a66.667 66.667 0 0 0-2.518-1.143c-1.482-27.307-16.403-42.94-41.457-43.1h-.34c-14.986 0-27.449 6.396-35.12 18.036l13.779 9.452c5.73-8.695 14.724-10.548 21.348-10.548h.229c8.249.053 14.474 2.452 18.503 7.129 2.932 3.405 4.893 8.11 5.864 14.05a90.322 90.322 0 0 0-19.163-2.088c-27.614 0-45.378 14.508-44.76 36.595.311 11.087 5.54 20.652 14.722 26.933 7.764 5.313 17.768 7.893 28.166 7.262 13.716-.831 24.447-5.659 31.886-14.348 5.639-6.588 9.338-15.081 11.17-25.735 6.692 4.048 11.669 9.381 14.444 15.876 4.715 11.037 4.991 29.156-9.728 43.879-12.882 12.877-28.391 18.442-53.401 18.634-27.74-.213-48.707-9.097-62.343-26.397C19.381 146.497 12.263 122.064 12.031 96c.232-26.064 7.35-50.497 21.168-67.572C46.834 11.128 67.801 2.244 95.54 2.031c27.94.213 49.171 9.152 63.131 26.569 6.832 8.533 12.071 19.149 15.583 31.505l16.52-4.4c-4.017-14.151-10.213-26.584-18.478-36.898C155.308 -1.042 129.958-12.07 95.467-12.365h-.072C60.953-12.07 35.888-.908 19.207 19.406 4.629 37.144-3.354 62.916-3.613 96.006l-.002.495.002.495c.259 33.09 8.242 58.862 22.82 76.6 16.681 20.314 41.746 31.476 76.188 31.77h.073c29.897-.226 50.013-7.794 66.982-25.2 22.023-22.589 20.685-50.6 13.586-67.218-5.089-11.915-14.617-21.592-27.499-27.96Zm-47.89 44.088c-11.498.699-23.44-4.539-23.797-17.256-.266-9.483 6.658-20.101 29.634-20.101 2.594 0 5.27.151 7.956.446.8 5.216 1.081 10.063.803 14.498-.999 15.862-8.35 21.985-14.596 22.413Z" />
+      <svg viewBox="-5 -15 202 222" className="w-10 h-10 text-ink">
+        <path fill="currentColor" d="M141.537 88.988a66.667 66.667 0 0 0-2.518-1.143c-1.482-27.307-16.403-42.94-41.457-43.1h-.34c-14.986 0-27.449 6.396-35.12 18.036l13.779 9.452c5.73-8.695 14.724-10.548 21.348-10.548h.229c8.249.053 14.474 2.452 18.503 7.129 2.932 3.405 4.893 8.11 5.864 14.05a90.322 90.322 0 0 0-19.163-2.088c-27.614 0-45.378 14.508-44.76 36.595.311 11.087 5.54 20.652 14.722 26.933 7.764 5.313 17.768 7.893 28.166 7.262 13.716-.831 24.447-5.659 31.886-14.348 5.639-6.588 9.338-15.081 11.17-25.735 6.692 4.048 11.669 9.381 14.444 15.876 4.715 11.037 4.991 29.156-9.728 43.879-12.882 12.877-28.391 18.442-53.401 18.634-27.74-.213-48.707-9.097-62.343-26.397C19.381 146.497 12.263 122.064 12.031 96c.232-26.064 7.35-50.497 21.168-67.572C46.834 11.128 67.801 2.244 95.54 2.031c27.94.213 49.171 9.152 63.131 26.569 6.832 8.533 12.071 19.149 15.583 31.505l16.52-4.4c-4.017-14.151-10.213-26.584-18.478-36.898C155.308 -1.042 129.958-12.07 95.467-12.365h-.072C60.953-12.07 35.888-.908 19.207 19.406 4.629 37.144-3.354 62.916-3.613 96.006l-.002.495.002.495c.259 33.09 8.242 58.862 22.82 76.6 16.681 20.314 41.746 31.476 76.188 31.77h.073c29.897-.226 50.013-7.794 66.982-25.2 22.023-22.589 20.685-50.6 13.586-67.218-5.089-11.915-14.617-21.592-27.499-27.96Zm-47.89 44.088c-11.498.699-23.44-4.539-23.797-17.256-.266-9.483 6.658-20.101 29.634-20.101 2.594 0 5.27.151 7.956.446.8 5.216 1.081 10.063.803 14.498-.999 15.862-8.35 21.985-14.596 22.413Z" />
       </svg>
     ),
   },
@@ -70,18 +70,18 @@ const socialLinks = [
 
 export function AixlifeAbout() {
   return (
-    <section id="about" className="py-32 bg-black border-t border-white/10">
+    <section id="about" className="py-32 bg-page border-t border-ink/10">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         
         <FadeIn className="text-center mb-20">
-          <h2 className="text-sm font-black tracking-widest text-brand-light uppercase mb-6 inline-block bg-[#262626] px-4 py-1 rounded-full">About AIMAX</h2>
-          <h3 className="text-4xl md:text-6xl lg:text-7xl font-black text-white tracking-tighter uppercase break-keep text-balance leading-tight mb-8">
+          <h2 className="text-sm font-black tracking-widest text-brand-light uppercase mb-6 inline-block bg-surface-2 px-4 py-1 rounded-full">About AIMAX</h2>
+          <h3 className="text-4xl md:text-6xl lg:text-7xl font-black text-ink tracking-tighter uppercase break-keep text-balance leading-tight mb-8">
             사람이 방향을 잡고,<br />
             <span className="text-brand-light">AI가 실행한다</span>
           </h3>
-          <div className="text-lg md:text-xl text-[#a3a3a3] font-medium leading-relaxed max-w-4xl mx-auto space-y-4">
+          <div className="text-lg md:text-xl text-sub font-medium leading-relaxed max-w-4xl mx-auto space-y-4">
             <p className="break-keep text-balance">
-              안녕하세요, AIMAX <strong className="text-white">나민수</strong>입니다.
+              안녕하세요, AIMAX <strong className="text-ink">나민수</strong>입니다.
             </p>
             <p className="break-keep text-balance">
               저는 AI가 단순한 도구가 아닌, 업무의 본질을 바꾸는 파트너가 될 수 있다고 믿습니다.<br className="hidden lg:block"/>
@@ -95,10 +95,10 @@ export function AixlifeAbout() {
         <StaggerContainer className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-16">
           {highlights.map((item, index) => (
             <StaggerItem key={index}>
-              <div className="bg-gradient-to-b from-[#171717] to-black p-6 md:p-8 rounded-[1.5rem] md:rounded-[2rem] h-full flex flex-col items-start border border-[#303030] hover:border-brand-light/30 hover:-translate-y-2 transition-all duration-300 shadow-xl relative overflow-hidden group">
+              <div className="bg-gradient-to-b from-surface to-page p-6 md:p-8 rounded-[1.5rem] md:rounded-[2rem] h-full flex flex-col items-start border border-line hover:border-brand-light/30 hover:-translate-y-2 transition-all duration-300 shadow-xl relative overflow-hidden group">
                 <div className="absolute top-0 right-0 w-24 h-24 bg-brand-light opacity-0 group-hover:opacity-[0.04] blur-2xl transition-opacity rounded-full -mr-8 -mt-8"></div>
-                <h4 className="font-black text-white text-lg md:text-xl lg:text-2xl mb-2 md:mb-3 tracking-tighter break-keep text-balance z-10">{item.title}</h4>
-                <p className="text-[#a3a3a3] leading-relaxed font-semibold break-keep text-balance text-xs md:text-sm z-10">{item.description}</p>
+                <h4 className="font-black text-ink text-lg md:text-xl lg:text-2xl mb-2 md:mb-3 tracking-tighter break-keep text-balance z-10">{item.title}</h4>
+                <p className="text-sub leading-relaxed font-semibold break-keep text-balance text-xs md:text-sm z-10">{item.description}</p>
               </div>
             </StaggerItem>
           ))}

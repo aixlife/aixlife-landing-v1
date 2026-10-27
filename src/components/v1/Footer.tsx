@@ -1,12 +1,13 @@
 export function Footer() {
   return (
-    <footer className="bg-black pt-24 pb-12 overflow-hidden border-t border-white/10">
+    <footer className="bg-page pt-24 pb-12 overflow-hidden border-t border-ink/10">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Massive Brand Name */}
         <div className="flex justify-center mb-12">
-          <h2 className="text-[15vw] leading-none font-black text-white tracking-tighter select-none">
-            AI<span className="text-brand-light">MAX</span>
+          <h2 className="select-none">
+            <img src="/images/logo-wordmark-dark.png" alt="AIMAX" className="logo-on-dark h-20 md:h-28 w-auto" />
+            <img src="/images/logo-wordmark-light.png" alt="AIMAX" className="logo-on-light h-20 md:h-28 w-auto" />
           </h2>
         </div>
 
@@ -22,7 +23,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-bold uppercase tracking-widest text-sm mb-6">Contact</h4>
+            <h4 className="text-ink font-bold uppercase tracking-widest text-sm mb-6">Contact</h4>
             <div className="space-y-4">
               <a href="mailto:makefamily@makefamily.kr" className="block text-gray-400 hover:text-brand-light transition-colors text-lg font-bold">
                 makefamily@makefamily.kr
@@ -35,7 +36,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-bold uppercase tracking-widest text-sm mb-6">Links</h4>
+            <h4 className="text-ink font-bold uppercase tracking-widest text-sm mb-6">Links</h4>
             <div className="space-y-4">
               <a href="https://github.com/aixlife" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-brand-light transition-colors text-lg font-bold">GitHub</a>
               <a href="https://aimax.ai.kr" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-brand-light transition-colors text-lg font-bold">AIMAX</a>
@@ -53,7 +54,7 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6 pt-8 border-t border-white/10">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6 pt-8 border-t border-ink/10">
           <p className="text-gray-500 font-bold text-sm">
             © {new Date().getFullYear()} MAKEFAMILY Inc. All rights reserved.
           </p>

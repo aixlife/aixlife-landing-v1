@@ -52,15 +52,15 @@ export function Topics() {
             <StaggerContainer>
               {TOPICS.slice(0, 3).map((topic, idx) => (
                 <StaggerItem key={idx} className="mb-6">
-                  <div className="bg-black rounded-3xl p-10 md:p-12 hover:-translate-y-2 transition-transform duration-300">
+                  <div className="bg-page rounded-3xl p-10 md:p-12 hover:-translate-y-2 transition-transform duration-300">
                     <div className="flex items-start justify-between mb-8">
                       <span className="text-5xl font-black text-brand-light opacity-50">0{idx + 1}</span>
-                      <div className="w-12 h-12 rounded-full border-2 border-white/20 flex items-center justify-center text-white">
+                      <div className="w-12 h-12 rounded-full border-2 border-ink/20 flex items-center justify-center text-ink">
                         <ArrowRight className="w-5 h-5" />
                       </div>
                     </div>
                     <h4 className="text-3xl font-black text-brand-light mb-6 uppercase tracking-tight break-keep text-balance">{topic.title}</h4>
-                    <p className="text-xl text-white/90 font-medium leading-relaxed break-keep text-balance">
+                    <p className="text-xl text-ink/90 font-medium leading-relaxed break-keep text-balance">
                       {topic.desc}
                     </p>
                   </div>
@@ -74,15 +74,15 @@ export function Topics() {
             <StaggerContainer>
               {TOPICS.slice(3, 6).map((topic, idx) => (
                 <StaggerItem key={idx} className="mb-6">
-                  <div className="bg-black rounded-3xl p-10 md:p-12 hover:-translate-y-2 transition-transform duration-300">
+                  <div className="bg-page rounded-3xl p-10 md:p-12 hover:-translate-y-2 transition-transform duration-300">
                     <div className="flex items-start justify-between mb-8">
                       <span className="text-5xl font-black text-brand-light opacity-50">0{idx + 4}</span>
-                      <div className="w-12 h-12 rounded-full border-2 border-white/20 flex items-center justify-center text-white">
+                      <div className="w-12 h-12 rounded-full border-2 border-ink/20 flex items-center justify-center text-ink">
                         <ArrowRight className="w-5 h-5" />
                       </div>
                     </div>
                     <h4 className="text-3xl font-black text-brand-light mb-6 uppercase tracking-tight break-keep text-balance">{topic.title}</h4>
-                    <p className="text-xl text-white/90 font-medium leading-relaxed break-keep text-balance">
+                    <p className="text-xl text-ink/90 font-medium leading-relaxed break-keep text-balance">
                       {topic.desc}
                     </p>
                   </div>
@@ -91,9 +91,9 @@ export function Topics() {
             </StaggerContainer>
             
             <FadeIn delay={0.4} className="pt-8">
-              <a href="https://pf.kakao.com/_LVxlXxj/chat" target="_blank" rel="noopener noreferrer" className="w-full bg-black text-brand-light py-8 rounded-3xl flex items-center justify-center gap-4 group hover:bg-white transition-colors">
-                <span className="text-3xl font-black tracking-tighter uppercase group-hover:text-black">맞춤 커리큘럼 문의</span>
-                <span className="w-12 h-12 rounded-full border-2 border-brand-light flex items-center justify-center group-hover:border-black group-hover:text-black">
+              <a href="https://pf.kakao.com/_LVxlXxj/chat" target="_blank" rel="noopener noreferrer" className="w-full bg-page text-brand-light py-8 rounded-3xl flex items-center justify-center gap-4 group hover:bg-ink transition-colors">
+                <span className="text-3xl font-black tracking-tighter uppercase group-hover:text-page">맞춤 커리큘럼 문의</span>
+                <span className="w-12 h-12 rounded-full border-2 border-brand-light flex items-center justify-center group-hover:border-page group-hover:text-page">
                   <ArrowRight className="w-6 h-6" />
                 </span>
               </a>
