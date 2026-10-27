@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <script>
-      // 기본은 다크. ?theme=light 또는 저장된 선택이 있으면 첫 렌더 전에 적용해 깜빡임을 막는다.
+      // 기본은 라이트. ?theme=dark 또는 저장된 선택이 있으면 첫 렌더 전에 적용해 깜빡임을 막는다.
       (function () {
+        var t = "light";
         try {
           var q = new URLSearchParams(location.search).get("theme");
-          var t = q === "light" || q === "dark" ? q : localStorage.getItem("theme");
-          if (t === "light") document.documentElement.dataset.theme = "light";
+          var s = localStorage.getItem("theme");
+          if (q === "light" || q === "dark") t = q;
+          else if (s === "light" || s === "dark") t = s;
         } catch (e) {}
+        document.documentElement.dataset.theme = t;
       })();
     </script>
 
@@ -105,9 +108,9 @@
       "sameAs": [
         "https://github.com/aixlife",
         "https://www.linkedin.com/in/naminsoo/",
-        "https://www.threads.com/@naminsoo_ai",
-        "https://www.instagram.com/naminsoo_ai/",
-        "https://www.youtube.com/@naminsoo_ai",
+        "https://www.threads.com/@naminsoo__ai",
+        "https://www.instagram.com/naminsoo__ai/",
+        "https://www.youtube.com/@naminsoo_aixschool",
         "https://pf.kakao.com/_LVxlXxj/chat"
       ]
     }
@@ -130,9 +133,9 @@
       "knowsAbout": ["AI 교육", "생성형 AI", "ChatGPT", "프롬프트 엔지니어링", "바이브코딩", "AI 컨설팅"],
       "award": "생성형 AI 크리에이티브 페어 수상 (충남콘텐츠코리아랩, 2023)",
       "sameAs": [
-        "https://www.threads.com/@naminsoo_ai",
-        "https://www.instagram.com/naminsoo_ai/",
-        "https://www.youtube.com/@naminsoo_ai",
+        "https://www.threads.com/@naminsoo__ai",
+        "https://www.instagram.com/naminsoo__ai/",
+        "https://www.youtube.com/@naminsoo_aixschool",
         "https://open.kakao.com/me/naminsoo_ai"
       ]
     }
