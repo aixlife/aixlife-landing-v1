@@ -36,10 +36,10 @@ export function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center gap-3 mb-8">
             <span className="flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-[#FFE87A] opacity-75" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#FFE87A]" />
+              <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-brand-light opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-light" />
             </span>
-            <span className="text-sm font-medium text-[#FFE87A] uppercase tracking-widest">
+            <span className="text-sm font-medium text-brand-light uppercase tracking-widest">
               AI 에이전트 제품 · AI 교육
             </span>
           </div>
@@ -50,7 +50,7 @@ export function Hero() {
             <span className="block text-white mt-2">AI</span>
             <span className="block mt-2">
               <span 
-                className={`inline-block text-[#FFE87A] transition-all duration-400 ${isAnimating ? "opacity-0 -translate-y-4" : "opacity-100 translate-y-0"}`}
+                className={`inline-block text-brand-light transition-all duration-400 ${isAnimating ? "opacity-0 -translate-y-4" : "opacity-100 translate-y-0"}`}
               >
                 {words[currentWord]}
               </span>
@@ -59,7 +59,7 @@ export function Hero() {
           </h1>
 
           {/* Definition Line */}
-          <p className="text-base md:text-lg text-[#FFE87A]/80 font-medium mb-6 tracking-wide">
+          <p className="text-base md:text-lg text-brand-light/80 font-medium mb-6 tracking-wide">
             사람이 방향을 잡고, AI가 실행합니다 — AI 직원(에이전트) 제품을 만들고 가르치는 기업
           </p>
 
@@ -72,7 +72,7 @@ export function Hero() {
 
           {/* CTA Buttons — semantic <a> for crawlers, JS scroll for UX */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("#contact"); }}>
+            <a href="https://pf.kakao.com/_LVxlXxj/chat" target="_blank" rel="noopener noreferrer">
               <Button
                 size="lg"
                 className="h-14 px-10 text-base font-bold tracking-wide flex items-center gap-2"

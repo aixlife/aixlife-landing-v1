@@ -29,11 +29,6 @@ const TOPICS = [
 ];
 
 export function Topics() {
-  const scrollToContact = (e: React.MouseEvent) => {
-    e.preventDefault();
-    document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <section id="topics" className="py-32 bg-primary">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -41,11 +36,11 @@ export function Topics() {
         <FadeIn className="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div>
             <h2 className="text-sm font-black tracking-widest text-black uppercase mb-6 inline-block bg-white px-4 py-1 rounded-full border border-black">Curriculum</h2>
-            <h3 className="text-6xl md:text-8xl font-black text-black tracking-tighter uppercase">
+            <h3 className="text-6xl md:text-8xl font-black text-white tracking-tighter uppercase">
               강의 주제
             </h3>
           </div>
-          <p className="text-2xl font-bold text-black max-w-md leading-snug break-keep text-balance">
+          <p className="text-2xl font-bold text-white max-w-md leading-snug break-keep text-balance">
             현장 경험을 바탕으로 실질적인 <br/>비즈니스 성과를 만듭니다.
           </p>
         </FadeIn>
@@ -59,12 +54,12 @@ export function Topics() {
                 <StaggerItem key={idx} className="mb-6">
                   <div className="bg-black rounded-3xl p-10 md:p-12 hover:-translate-y-2 transition-transform duration-300">
                     <div className="flex items-start justify-between mb-8">
-                      <span className="text-5xl font-black text-primary opacity-50">0{idx + 1}</span>
+                      <span className="text-5xl font-black text-brand-light opacity-50">0{idx + 1}</span>
                       <div className="w-12 h-12 rounded-full border-2 border-white/20 flex items-center justify-center text-white">
                         <ArrowRight className="w-5 h-5" />
                       </div>
                     </div>
-                    <h4 className="text-3xl font-black text-primary mb-6 uppercase tracking-tight break-keep text-balance">{topic.title}</h4>
+                    <h4 className="text-3xl font-black text-brand-light mb-6 uppercase tracking-tight break-keep text-balance">{topic.title}</h4>
                     <p className="text-xl text-white/90 font-medium leading-relaxed break-keep text-balance">
                       {topic.desc}
                     </p>
@@ -81,12 +76,12 @@ export function Topics() {
                 <StaggerItem key={idx} className="mb-6">
                   <div className="bg-black rounded-3xl p-10 md:p-12 hover:-translate-y-2 transition-transform duration-300">
                     <div className="flex items-start justify-between mb-8">
-                      <span className="text-5xl font-black text-primary opacity-50">0{idx + 4}</span>
+                      <span className="text-5xl font-black text-brand-light opacity-50">0{idx + 4}</span>
                       <div className="w-12 h-12 rounded-full border-2 border-white/20 flex items-center justify-center text-white">
                         <ArrowRight className="w-5 h-5" />
                       </div>
                     </div>
-                    <h4 className="text-3xl font-black text-primary mb-6 uppercase tracking-tight break-keep text-balance">{topic.title}</h4>
+                    <h4 className="text-3xl font-black text-brand-light mb-6 uppercase tracking-tight break-keep text-balance">{topic.title}</h4>
                     <p className="text-xl text-white/90 font-medium leading-relaxed break-keep text-balance">
                       {topic.desc}
                     </p>
@@ -96,12 +91,12 @@ export function Topics() {
             </StaggerContainer>
             
             <FadeIn delay={0.4} className="pt-8">
-              <button onClick={scrollToContact} className="w-full bg-black text-primary py-8 rounded-3xl flex items-center justify-center gap-4 group hover:bg-white transition-colors">
+              <a href="https://pf.kakao.com/_LVxlXxj/chat" target="_blank" rel="noopener noreferrer" className="w-full bg-black text-brand-light py-8 rounded-3xl flex items-center justify-center gap-4 group hover:bg-white transition-colors">
                 <span className="text-3xl font-black tracking-tighter uppercase group-hover:text-black">맞춤 커리큘럼 문의</span>
-                <span className="w-12 h-12 rounded-full border-2 border-primary flex items-center justify-center group-hover:border-black group-hover:text-black">
+                <span className="w-12 h-12 rounded-full border-2 border-brand-light flex items-center justify-center group-hover:border-black group-hover:text-black">
                   <ArrowRight className="w-6 h-6" />
                 </span>
-              </button>
+              </a>
             </FadeIn>
           </div>
 

@@ -6,7 +6,7 @@ export function Footer() {
         {/* Massive Brand Name */}
         <div className="flex justify-center mb-12">
           <h2 className="text-[15vw] leading-none font-black text-white tracking-tighter select-none">
-            AI<span className="text-primary">X</span>LIFE
+            AI<span className="text-brand-light">MAX</span>
           </h2>
         </div>
 
@@ -17,19 +17,19 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-24">
           <div>
             <p className="text-gray-400 text-lg font-medium leading-relaxed max-w-sm">
-              사람이 방향을 잡고, AI가 실행한다.<br/>AI 직원(에이전트) 제품 개발과 실전 AI 교육. Since 2023.
+              사람이 방향을 잡고, AI가 실행한다.<br/>AI 직원(에이전트) 제품 개발과 실전 AI 교육.
             </p>
           </div>
 
           <div>
             <h4 className="text-white font-bold uppercase tracking-widest text-sm mb-6">Contact</h4>
             <div className="space-y-4">
-              <a href="mailto:naminsoo@aixlife.co.kr" className="block text-gray-400 hover:text-primary transition-colors text-lg font-bold">
-                naminsoo@aixlife.co.kr
+              <a href="mailto:makefamily@makefamily.kr" className="block text-gray-400 hover:text-brand-light transition-colors text-lg font-bold">
+                makefamily@makefamily.kr
               </a>
-              <a href="tel:+82-10-3709-0516" className="block text-gray-400 hover:text-primary transition-colors text-lg font-bold">010-3709-0516</a>
-              <a href="https://open.kakao.com/o/gT0uVxJh" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-primary transition-colors text-lg font-bold">
-                카카오 오픈채팅
+              <a href="tel:0266727781" className="block text-gray-400 hover:text-brand-light transition-colors text-lg font-bold">02-6672-7781</a>
+              <a href="https://pf.kakao.com/_LVxlXxj/chat" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-brand-light transition-colors text-lg font-bold">
+                카카오톡 상담
               </a>
             </div>
           </div>
@@ -37,29 +37,29 @@ export function Footer() {
           <div>
             <h4 className="text-white font-bold uppercase tracking-widest text-sm mb-6">Links</h4>
             <div className="space-y-4">
-              <a href="https://github.com/aixlife" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-primary transition-colors text-lg font-bold">GitHub</a>
-              <a href="https://aimax.ai.kr" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-primary transition-colors text-lg font-bold">AIMAX</a>
-              <a href="https://aixschool.kr" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-primary transition-colors text-lg font-bold">AIxSCHOOL</a>
-              <a href="/about/" className="block text-gray-400 hover:text-primary transition-colors text-lg font-bold">About (English)</a>
+              <a href="https://github.com/aixlife" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-brand-light transition-colors text-lg font-bold">GitHub</a>
+              <a href="https://aimax.ai.kr" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-brand-light transition-colors text-lg font-bold">AIMAX</a>
+              <a href="https://aixschool.kr" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-brand-light transition-colors text-lg font-bold">AIxSCHOOL</a>
+              <a href="/about/" className="block text-gray-400 hover:text-brand-light transition-colors text-lg font-bold">About (English)</a>
             </div>
           </div>
         </div>
 
         {/* Business info */}
         <div className="text-gray-500 text-sm font-medium leading-relaxed space-y-1 mb-10 break-keep">
-          <p>상호 에익스라이프(AIXLIFE) · 대표 나민수 · 사업자등록번호 789-71-00438</p>
-          <p>주소 서울특별시 강북구 도봉로65길 39-4(미아동) · 개업 2023년 1월 26일 · 업종 정보통신업(컴퓨터 프로그래밍 서비스업), 시각 디자인업</p>
-          <p>이메일 naminsoo@aixlife.co.kr · 전화 010-3709-0516 · 호스팅 Vercel Inc.</p>
+          <p>상호 (주)메이크패밀리 · 대표 윤동규 · 사업자등록번호 537-87-01496 · 통신판매업 제2020-서울금천-0389호</p>
+          <p>주소 경기도 광명시 일직로 43, GIDC A동 2513호 · 개인정보보호책임자 윤동규</p>
+          <p>이메일 makefamily@makefamily.kr · 전화 02-6672-7781 · 호스팅 Vercel Inc.</p>
         </div>
 
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 pt-8 border-t border-white/10">
           <p className="text-gray-500 font-bold text-sm">
-            © 2023–{new Date().getFullYear()} AIXLIFE. All rights reserved.
+            © {new Date().getFullYear()} MAKEFAMILY Inc. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm font-bold">
-            <a href="/privacy/" className="text-gray-300 hover:text-primary transition-colors">개인정보처리방침</a>
-            <a href="/terms/" className="text-gray-500 hover:text-primary transition-colors">이용약관</a>
+            <a href="/privacy/" className="text-gray-300 hover:text-brand-light transition-colors">개인정보처리방침</a>
+            <a href="/terms/" className="text-gray-500 hover:text-brand-light transition-colors">이용약관</a>
           </div>
         </div>
 

@@ -12,7 +12,7 @@ type Product = {
 const PRODUCTS: Product[] = [
   {
     name: "AIMAX AI 직원",
-    tag: "AIXLIFE 개발 · 사용자 3,000명",
+    tag: "자체 개발 · 사용자 3,000명",
     desc: "사장님 대신 블로그 글쓰기, 견적서, 고객 찾기, 사무 정리를 맡는 AI 직원 서비스. 운영 웹앱과 Mac/Windows 로컬 에이전트로 구성되며, 사용자 3,000명이 쓰고 있습니다.",
     stack: "Claude API (Claude Sonnet) 글쓰기·판단 엔진",
     url: "https://aimax.ai.kr",
@@ -43,17 +43,17 @@ export function Products() {
     <section id="products" className="py-32 bg-black border-t border-white/10">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn className="mb-16">
-          <h2 className="text-sm font-black tracking-widest text-black uppercase mb-6 inline-block bg-primary px-4 py-1 rounded-full">
+          <h2 className="text-sm font-black tracking-widest text-white uppercase mb-6 inline-block bg-primary px-4 py-1 rounded-full">
             Products
           </h2>
           <h3 className="text-6xl md:text-8xl font-black text-white tracking-tighter uppercase mb-8">
             만드는 제품
           </h3>
           <p className="text-xl md:text-2xl text-gray-400 max-w-3xl leading-relaxed break-keep text-balance">
-            AIXLIFE는 가르치기만 하지 않습니다. 비개발자 사장님과 조직이 바로 쓰는 AI 직원(에이전트) 제품을 직접 만들고 운영합니다.
+            AIMAX는 가르치기만 하지 않습니다. 비개발자 사장님과 조직이 바로 쓰는 AI 직원(에이전트) 제품을 직접 만들고 운영합니다.
           </p>
           <p className="mt-4 text-base text-gray-500 max-w-3xl leading-relaxed">
-            AIXLIFE (founded 2023, Seoul, Korea) builds AI agent products for Korean small businesses and teams, built on Anthropic's Claude.
+            AIMAX, operated by MAKEFAMILY Inc. (Korea), builds AI agent products for Korean small businesses and teams, built on Anthropic's Claude.
           </p>
         </FadeIn>
 
@@ -62,20 +62,20 @@ export function Products() {
             const Inner = (
               <div className="h-full border-2 border-primary rounded-3xl p-8 md:p-10 group hover:bg-primary transition-colors">
                 <div className="flex items-start justify-between gap-4 mb-4">
-                  <h4 className="text-3xl md:text-4xl font-black text-white group-hover:text-black tracking-tighter transition-colors break-keep">
+                  <h4 className="text-3xl md:text-4xl font-black text-white group-hover:text-white tracking-tighter transition-colors break-keep">
                     {p.name}
                   </h4>
                   {p.url && (
-                    <ArrowUpRight className="shrink-0 w-8 h-8 text-primary group-hover:text-black transition-colors" />
+                    <ArrowUpRight className="shrink-0 w-8 h-8 text-brand-light group-hover:text-white transition-colors" />
                   )}
                 </div>
-                <span className="inline-flex items-center px-3 py-1 rounded-full bg-primary/20 text-primary text-sm font-bold mb-6 group-hover:bg-black/20 group-hover:text-black transition-colors">
+                <span className="inline-flex items-center px-3 py-1 rounded-full bg-primary/20 text-brand-light text-sm font-bold mb-6 group-hover:bg-white/20 group-hover:text-white transition-colors">
                   {p.tag}
                 </span>
-                <p className="text-lg md:text-xl font-medium text-gray-300 group-hover:text-black/80 leading-relaxed break-keep mb-6 transition-colors">
+                <p className="text-lg md:text-xl font-medium text-gray-300 group-hover:text-white/80 leading-relaxed break-keep mb-6 transition-colors">
                   {p.desc}
                 </p>
-                <p className="text-sm font-bold text-gray-500 group-hover:text-black/70 tracking-wide transition-colors">
+                <p className="text-sm font-bold text-gray-500 group-hover:text-white/70 tracking-wide transition-colors">
                   {p.stack}
                   {p.url && <span className="ml-2">· {p.url.replace("https://", "")}</span>}
                 </p>

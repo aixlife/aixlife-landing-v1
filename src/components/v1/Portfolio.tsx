@@ -45,7 +45,7 @@ export function Portfolio() {
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         
         <FadeIn className="mb-20">
-          <h2 className="text-sm font-black tracking-widest text-black uppercase mb-6 inline-block bg-primary px-4 py-1 rounded-full">Success to Date</h2>
+          <h2 className="text-sm font-black tracking-widest text-white uppercase mb-6 inline-block bg-primary px-4 py-1 rounded-full">Success to Date</h2>
           <h3 className="text-6xl md:text-8xl font-black text-white tracking-tighter uppercase mb-12">
             교육 실적
           </h3>
@@ -62,8 +62,8 @@ export function Portfolio() {
                   className={cn(
                     "px-8 py-4 rounded-full font-black text-xl border-2 transition-all",
                     isActive 
-                      ? "bg-primary border-primary text-black" 
-                      : "bg-transparent border-primary text-primary hover:bg-primary/10"
+                      ? "bg-primary border-primary text-white" 
+                      : "bg-transparent border-primary text-brand-light hover:bg-primary/10"
                   )}
                 >
                   {tab.label}
@@ -79,16 +79,16 @@ export function Portfolio() {
               <StaggerItem key={idx}>
                 <div className="grid grid-cols-1 md:grid-cols-12 py-12 gap-6 md:gap-12 border-b-2 border-primary group hover:bg-primary transition-colors px-4 sm:px-6 lg:px-8 -mx-4 sm:-mx-6 lg:-mx-8 cursor-default">
                   <div className="md:col-span-5">
-                    <h4 className="text-4xl md:text-5xl font-black text-white group-hover:text-black tracking-tighter transition-colors break-keep text-balance">
+                    <h4 className="text-4xl md:text-5xl font-black text-white group-hover:text-white tracking-tighter transition-colors break-keep text-balance">
                       {item.org}
                     </h4>
                   </div>
                   <div className="md:col-span-7 flex items-center gap-4">
-                    <p className="text-2xl font-bold text-gray-400 group-hover:text-black/80 transition-colors leading-snug break-keep text-balance">
+                    <p className="text-2xl font-bold text-gray-400 group-hover:text-white/80 transition-colors leading-snug break-keep text-balance">
                       {item.desc}
                     </p>
                     {"metric" in item && item.metric && (
-                      <span className="shrink-0 inline-flex items-center px-3 py-1 rounded-full bg-primary/20 text-primary text-sm font-bold group-hover:bg-black/20 group-hover:text-black transition-colors">
+                      <span className="shrink-0 inline-flex items-center px-3 py-1 rounded-full bg-primary/20 text-brand-light text-sm font-bold group-hover:bg-white/20 group-hover:text-white transition-colors">
                         {item.metric}
                       </span>
                     )}

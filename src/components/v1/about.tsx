@@ -74,14 +74,14 @@ export function AixlifeAbout() {
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         
         <FadeIn className="text-center mb-20">
-          <h2 className="text-sm font-black tracking-widest text-[#FFE87A] uppercase mb-6 inline-block bg-[#262626] px-4 py-1 rounded-full">About AIXLIFE</h2>
+          <h2 className="text-sm font-black tracking-widest text-brand-light uppercase mb-6 inline-block bg-[#262626] px-4 py-1 rounded-full">About AIMAX</h2>
           <h3 className="text-4xl md:text-6xl lg:text-7xl font-black text-white tracking-tighter uppercase break-keep text-balance leading-tight mb-8">
             사람이 방향을 잡고,<br />
-            <span className="text-[#FFE87A]">AI가 실행한다</span>
+            <span className="text-brand-light">AI가 실행한다</span>
           </h3>
           <div className="text-lg md:text-xl text-[#a3a3a3] font-medium leading-relaxed max-w-4xl mx-auto space-y-4">
             <p className="break-keep text-balance">
-              안녕하세요, AIXLIFE 대표 <strong className="text-white">나민수</strong>입니다.
+              안녕하세요, AIMAX <strong className="text-white">나민수</strong>입니다.
             </p>
             <p className="break-keep text-balance">
               저는 AI가 단순한 도구가 아닌, 업무의 본질을 바꾸는 파트너가 될 수 있다고 믿습니다.<br className="hidden lg:block"/>
@@ -95,8 +95,8 @@ export function AixlifeAbout() {
         <StaggerContainer className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-16">
           {highlights.map((item, index) => (
             <StaggerItem key={index}>
-              <div className="bg-gradient-to-b from-[#171717] to-black p-6 md:p-8 rounded-[1.5rem] md:rounded-[2rem] h-full flex flex-col items-start border border-[#303030] hover:border-[#FFE87A]/30 hover:-translate-y-2 transition-all duration-300 shadow-xl relative overflow-hidden group">
-                <div className="absolute top-0 right-0 w-24 h-24 bg-[#FFE87A] opacity-0 group-hover:opacity-[0.04] blur-2xl transition-opacity rounded-full -mr-8 -mt-8"></div>
+              <div className="bg-gradient-to-b from-[#171717] to-black p-6 md:p-8 rounded-[1.5rem] md:rounded-[2rem] h-full flex flex-col items-start border border-[#303030] hover:border-brand-light/30 hover:-translate-y-2 transition-all duration-300 shadow-xl relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-24 h-24 bg-brand-light opacity-0 group-hover:opacity-[0.04] blur-2xl transition-opacity rounded-full -mr-8 -mt-8"></div>
                 <h4 className="font-black text-white text-lg md:text-xl lg:text-2xl mb-2 md:mb-3 tracking-tighter break-keep text-balance z-10">{item.title}</h4>
                 <p className="text-[#a3a3a3] leading-relaxed font-semibold break-keep text-balance text-xs md:text-sm z-10">{item.description}</p>
               </div>

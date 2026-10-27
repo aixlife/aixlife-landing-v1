@@ -74,7 +74,7 @@ export function NeuralNetworkBackground() {
         if (!ctx) return; // Add null check for TypeScript
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fillStyle = "rgba(255, 232, 122, 0.7)"; // #FFE87A particles
+        ctx.fillStyle = "rgba(107, 155, 255, 0.7)"; // #6B9BFF particles (cobalt light)
         ctx.fill();
       }
     }
@@ -104,7 +104,7 @@ export function NeuralNetworkBackground() {
 
           if (distance < 130) {
             ctx.beginPath();
-            ctx.strokeStyle = `rgba(255, 232, 122, ${(1 - distance / 130) * 0.4})`;
+            ctx.strokeStyle = `rgba(107, 155, 255, ${(1 - distance / 130) * 0.4})`;
             ctx.lineWidth = 0.8;
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);

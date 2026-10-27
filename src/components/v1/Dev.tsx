@@ -45,14 +45,14 @@ export function Dev() {
     <section id="dev" className="py-32 bg-black border-t border-white/10">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn className="mb-16">
-          <h2 className="text-sm font-black tracking-widest text-black uppercase mb-6 inline-block bg-primary px-4 py-1 rounded-full">
+          <h2 className="text-sm font-black tracking-widest text-white uppercase mb-6 inline-block bg-primary px-4 py-1 rounded-full">
             Development
           </h2>
           <h3 className="text-6xl md:text-8xl font-black text-white tracking-tighter uppercase mb-8">
             개발 &amp; 오픈소스
           </h3>
           <p className="text-xl md:text-2xl text-gray-400 max-w-3xl leading-relaxed break-keep text-balance">
-            AIXLIFE는 컴퓨터 프로그래밍 서비스업으로 등록된 개발 회사입니다. 기획부터 개발, 배포, 운영까지 직접 합니다.
+            AIMAX는 기획부터 개발, 배포, 운영까지 직접 합니다.
           </p>
         </FadeIn>
 
@@ -73,7 +73,7 @@ export function Dev() {
           <p className="text-sm text-gray-500 font-bold uppercase mb-4 tracking-widest">Stack</p>
           <div className="flex flex-wrap gap-3">
             {STACK.map((s) => (
-              <span key={s} className="px-5 py-2 rounded-full border-2 border-primary text-primary font-bold text-base">
+              <span key={s} className="px-5 py-2 rounded-full border-2 border-primary text-brand-light font-bold text-base">
                 {s}
               </span>
             ))}
@@ -87,7 +87,7 @@ export function Dev() {
             href="https://github.com/aixlife"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-primary text-black font-black text-lg hover:bg-white transition-colors"
+            className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-primary text-white font-black text-lg hover:bg-white hover:text-black transition-colors"
           >
             <Github className="w-5 h-5" />
             github.com/aixlife
@@ -105,15 +105,15 @@ export function Dev() {
                 className="block h-full border-2 border-primary rounded-3xl p-8 group hover:bg-primary transition-colors"
               >
                 <div className="flex items-start justify-between gap-4 mb-4">
-                  <h5 className="text-2xl md:text-3xl font-black text-white group-hover:text-black tracking-tight break-all transition-colors">
+                  <h5 className="text-2xl md:text-3xl font-black text-white group-hover:text-white tracking-tight break-all transition-colors">
                     aixlife/{r.name}
                   </h5>
-                  <ArrowUpRight className="shrink-0 w-7 h-7 text-primary group-hover:text-black transition-colors" />
+                  <ArrowUpRight className="shrink-0 w-7 h-7 text-brand-light group-hover:text-white transition-colors" />
                 </div>
-                <p className="text-lg text-gray-300 group-hover:text-black/80 leading-relaxed break-keep mb-4 transition-colors">
+                <p className="text-lg text-gray-300 group-hover:text-white/80 leading-relaxed break-keep mb-4 transition-colors">
                   {r.desc}
                 </p>
-                <p className="text-sm font-bold text-gray-500 group-hover:text-black/70 transition-colors">{r.lang}</p>
+                <p className="text-sm font-bold text-gray-500 group-hover:text-white/70 transition-colors">{r.lang}</p>
               </a>
             </StaggerItem>
           ))}

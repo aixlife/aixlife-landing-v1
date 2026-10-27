@@ -18,6 +18,8 @@
 
   --color-primary: hsl(var(--primary));
   --color-primary-foreground: hsl(var(--primary-foreground));
+  /* 코발트 #0047AB는 검정 배경 글자로 대비가 낮아(2.5:1) 글자·선 강조는 밝은 코발트를 쓴다 */
+  --color-brand-light: #6B9BFF;
 
   --color-secondary: hsl(var(--secondary));
   --color-secondary-foreground: hsl(var(--secondary-foreground));
@@ -47,7 +49,7 @@
   
   --border: 0 0% 88%;
   --input: 0 0% 88%;
-  --ring: 48 96% 73%;
+  --ring: 215 100% 34%;
   
   --card: 0 0% 0%;
   --card-foreground: 0 0% 100%;
@@ -56,8 +58,8 @@
   --popover: 0 0% 100%;
   --popover-foreground: 0 0% 4%;
   
-  --primary: 48 96% 73%;
-  --primary-foreground: 0 0% 4%;
+  --primary: 215 100% 34%;
+  --primary-foreground: 0 0% 100%;
   
   --secondary: 0 0% 96%;
   --secondary-foreground: 0 0% 4%;
@@ -65,8 +67,8 @@
   --muted: 0 0% 96%;
   --muted-foreground: 0 0% 40%;
   
-  --accent: 48 96% 73%;
-  --accent-foreground: 0 0% 4%;
+  --accent: 215 100% 34%;
+  --accent-foreground: 0 0% 100%;
   
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
@@ -79,20 +81,20 @@
   --foreground: 0 0% 4%;
   --border: 0 0% 88%;
   --input: 0 0% 88%;
-  --ring: 48 96% 73%;
+  --ring: 215 100% 34%;
   --card: 0 0% 0%;
   --card-foreground: 0 0% 100%;
   --card-border: 0 0% 88%;
   --popover: 0 0% 100%;
   --popover-foreground: 0 0% 4%;
-  --primary: 48 96% 73%;
-  --primary-foreground: 0 0% 4%;
+  --primary: 215 100% 34%;
+  --primary-foreground: 0 0% 100%;
   --secondary: 0 0% 96%;
   --secondary-foreground: 0 0% 4%;
   --muted: 0 0% 96%;
   --muted-foreground: 0 0% 40%;
-  --accent: 48 96% 73%;
-  --accent-foreground: 0 0% 4%;
+  --accent: 215 100% 34%;
+  --accent-foreground: 0 0% 100%;
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
 }

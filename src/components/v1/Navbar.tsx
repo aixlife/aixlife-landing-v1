@@ -58,17 +58,17 @@ export function Navbar() {
               className="flex items-center gap-3 group"
             >
               <span className="font-display font-black text-2xl tracking-tighter text-white uppercase">
-                AI<span className="text-primary">X</span>LIFE
+                AI<span className="text-brand-light">MAX</span>
               </span>
             </a>
 
             {/* Menu Button */}
             <button
               onClick={() => setIsOpen(true)}
-              className="flex items-center gap-3 text-white hover:text-primary transition-colors group"
+              className="flex items-center gap-3 text-white hover:text-brand-light transition-colors group"
             >
               <span className="font-bold text-sm tracking-widest uppercase hidden sm:block">Menu</span>
-              <span className="w-10 h-10 rounded-full border-2 border-current flex items-center justify-center group-hover:bg-primary group-hover:text-black transition-all">
+              <span className="w-10 h-10 rounded-full border-2 border-current flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all">
                 <ArrowRight className="w-5 h-5" />
               </span>
             </button>
@@ -86,7 +86,7 @@ export function Navbar() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setIsOpen(false)}
-              className="fixed inset-0 z-40 bg-yellow-200/30 backdrop-blur-sm cursor-pointer"
+              className="fixed inset-0 z-40 bg-primary/30 backdrop-blur-sm cursor-pointer"
             />
 
             {/* Right Panel */}
@@ -100,7 +100,7 @@ export function Navbar() {
               <div className="flex justify-end p-6 md:p-8">
                 <button
                   onClick={() => setIsOpen(false)}
-                  className="w-12 h-12 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-primary hover:text-black transition-colors"
+                  className="w-12 h-12 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
                 >
                   <X className="w-6 h-6" />
                 </button>
@@ -115,10 +115,10 @@ export function Navbar() {
                       onClick={(e) => scrollToSection(e, link.href)}
                       className="group py-6 border-b border-white/10 flex items-center justify-between"
                     >
-                      <span className="text-3xl md:text-5xl font-black text-white uppercase group-hover:text-primary transition-colors tracking-tighter">
+                      <span className="text-3xl md:text-5xl font-black text-white uppercase group-hover:text-brand-light transition-colors tracking-tighter">
                         {link.name}
                       </span>
-                      <ArrowRight className="w-6 h-6 text-white/0 group-hover:text-primary transition-colors transform -translate-x-4 group-hover:translate-x-0" />
+                      <ArrowRight className="w-6 h-6 text-white/0 group-hover:text-brand-light transition-colors transform -translate-x-4 group-hover:translate-x-0" />
                     </a>
                   ))}
                 </nav>
@@ -126,9 +126,9 @@ export function Navbar() {
                 <div className="mt-16">
                   <p className="text-gray-500 font-bold mb-4 uppercase tracking-widest text-sm">Contact Us</p>
                   <span className="text-xl font-bold text-white">
-                    naminsoo@aixlife.co.kr
+                    makefamily@makefamily.kr
                   </span>
-                  <p className="text-xl font-bold text-white mt-2">010-3709-0516</p>
+                  <p className="text-xl font-bold text-white mt-2">02-6672-7781</p>
                 </div>
               </div>
             </motion.div>

@@ -1,5 +1,5 @@
-# AIXLIFE - AI Education & Consulting
-# https://aixlife.co.kr
+# AIMAX - AI Education & Consulting
+# https://aimax.ai.kr
 
 User-agent: *
 Allow: /
@@ -29,4 +29,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://aixlife.co.kr/sitemap.xml
+Sitemap: https://aimax.ai.kr/sitemap.xml
