@@ -16,6 +16,8 @@
         document.documentElement.dataset.theme = t;
       })();
     </script>
+    <!-- crawler-only copy inside #root: hidden once JS runs so it never flashes before React mounts -->
+    <style>html[data-theme] .seo-static{display:none}</style>
 
     <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="JWy7lvSMAzcqChrcINvhTQLFjomMhyEwP-x3uVhJrKk" />
@@ -281,7 +283,7 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WC9F699H"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-    <div id="root"><div style="max-width:1100px;margin:0 auto;padding:48px 24px;font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;background:#000;color:#ddd;line-height:1.7">
+    <div id="root"><div class="seo-static" style="max-width:1100px;margin:0 auto;padding:48px 24px;font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;background:#000;color:#ddd;line-height:1.7">
       <header>
         <h1>AIMAX — AI agent products built on Claude</h1>
         <p>AIMAX is operated by MAKEFAMILY Inc. (주식회사 메이크패밀리), South Korea. We build AI agent ("AI staff") products for Korean small businesses and teams without developers, and we teach them to build their own.</p>
