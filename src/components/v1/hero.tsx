@@ -47,8 +47,8 @@ export function Hero() {
           {/* Main Headline */}
           <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl font-heading font-black tracking-tighter uppercase leading-[0.85] mb-8">
             <span className="block text-ink">당신의 조직을</span>
-            <span className="block text-ink mt-2">AI</span>
             <span className="block mt-2">
+              <span className="text-ink">AI </span>
               <span 
                 className={`inline-block text-brand-light transition-all duration-400 ${isAnimating ? "opacity-0 -translate-y-4" : "opacity-100 translate-y-0"}`}
               >
